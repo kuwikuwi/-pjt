@@ -5,7 +5,7 @@ import { useRouter } from 'vue-router'
 
 export const useAuthStore = defineStore('counter', () => {
   const router = useRouter()
-  const API_URL = 'http://127.0.0.1:8000'
+  const API_URL = 'http://127.0.0.1:8080'
   const token = ref(null)
   const isLogin = computed(() => {
       if (token.value === null) {
